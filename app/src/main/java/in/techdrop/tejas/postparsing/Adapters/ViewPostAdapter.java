@@ -68,6 +68,7 @@ public class ViewPostAdapter extends BaseAdapter {
       holder.title = (TextView) convertView.findViewById(R.id.title);
       holder.body = (TextView) convertView.findViewById(R.id.body);
 
+
     }
     else
     {

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="in.techdrop.tejas.postparsing.SearchImages">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    tools:layout_editor_absoluteX="8dp"
+    tools:layout_editor_absoluteY="8dp"
+    tools:ignore="UselessParent"
+    android:id="@+id/linearLayout"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+
+    <EditText
+      android:id="@+id/editTextSearch"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="0.99"
+      tools:layout_editor_absoluteX="1dp"
+      tools:layout_editor_absoluteY="1dp"
+      android:inputType="" />
+
+    <Button
+      android:id="@+id/button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:onClick="SearchImages"
+      android:text="@string/btnSearch"
+      tools:layout_editor_absoluteX="314dp"
+      tools:layout_editor_absoluteY="-32dp" />
+
+  </LinearLayout>
+
+  <ListView
+    android:id="@+id/listViewImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/linearLayout"
+    android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -128,7 +128,7 @@ public class ViewPosts extends AppCompatActivity
           {
 //            Intent i = new Intent(ViewPosts.this,NoInternetConnection.class);
 //            startActivity(i);
-            //Toast.makeText(getApplicationContext(),"Couldn't get json from server. Check LogCat for possible errors!", LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Couldn't get json from server. Check LogCat for possible errors!", LENGTH_LONG).show();
           }
         });
       }
