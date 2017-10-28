@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-  Button btnPost,btnSearchImages;
+  Button btnPost,btnSearchImages,btnVolleyJson;
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -18,13 +18,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
       btnPost = (Button) findViewById(R.id.posts);
       btnSearchImages = (Button) findViewById(R.id.btnImgParsing);
+      btnVolleyJson = (Button) findViewById(R.id.btnVolleyJson);
+
+
 
       btnSearchImages.setOnClickListener(this);
       btnPost.setOnClickListener(this);
+      btnVolleyJson.setOnClickListener(this);
+
 
   }
 
-     @Override
+    @Override
     public void onClick(View v)
     {
         if (btnPost == v)
@@ -35,6 +40,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (btnSearchImages == v)
         {
           Intent i = new Intent(getApplicationContext(),SearchImages.class);
+          startActivity(i);
+        }
+        if(btnVolleyJson == v)
+        {
+          Intent i = new Intent(getApplicationContext(),VolleyJson.class);
           startActivity(i);
         }
     }

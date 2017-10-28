@@ -18,8 +18,9 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:name=".ViewPosts"></activity>
-    <activity android:name=".SearchImages"></activity>
+    <activity android:name=".ViewPosts" />
+    <activity android:name=".SearchImages" />
+    <activity android:name=".VolleyJson"></activity>
   </application>
 
 </manifest>

@@ -7,10 +7,21 @@
   tools:context="in.techdrop.tejas.postparsing.MainActivity">
 
 
+  <TextView
+    android:id="@+id/textView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/parsing_methods"
+    android:textAlignment="center"
+    android:textSize="30sp"
+    android:textStyle="bold"
+    android:visibility="visible" />
+
   <Button
     android:id="@+id/posts"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
     android:text="@string/posts"
     tools:ignore="MissingConstraints"
     tools:layout_editor_absoluteX="8dp"
@@ -24,8 +35,19 @@
     tools:ignore="HardcodedText,MissingConstraints"
     tools:layout_editor_absoluteX="8dp"
     tools:layout_editor_absoluteY="60dp"
+    android:layout_marginTop="24dp"
     android:layout_below="@+id/posts"
     android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginTop="13dp" />
+    android:layout_alignParentStart="true" />
+
+  <Button
+    android:id="@+id/btnVolleyJson"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="26dp"
+    android:text="@string/volley"
+    android:layout_below="@+id/btnImgParsing"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
 </RelativeLayout>

@@ -2,4 +2,7 @@
   <string name="app_name">PostParsing</string>
   <string name="posts">posts</string>
   <string name="btnSearch">Search</string>
+  <string name="volley">Volley JSON RecycleView</string>
+  <string name="volley_array">VOLLEY ARRAY</string>
+  <string name="parsing_methods">Parsing Methods</string>
 </resources>
